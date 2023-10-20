@@ -8,7 +8,7 @@ public class Fan {
 	private int currentRotation;
 
   // Value for reverse function
-	private boolean reversed;
+	private boolean isReversed;
 
  // Setter for speed rotations
 	public void setSpeedRotations(int speedRotations) {
@@ -21,8 +21,8 @@ public class Fan {
 	}
 
   // setter for reverse function
-	public void setReversed(boolean reversed) {
-		this.reversed = reversed;
+	public void setIsReversed(boolean isReversed) {
+		this.isReversed = isReversed;
 	}
 	
   // Empty constructor for instatiation
@@ -36,19 +36,19 @@ public class Fan {
 			this.currentRotation = this.currentRotation+1;
 		else{
 			this.currentRotation = 0;
-      this.reversed = false;
+      this.isReversed = false;
     }
 	}
 	
   // pull cord to reverse fan
 	public void pullReverse() {
 	
-      this.reversed=!this.reversed;
+      this.isReversed=!this.isReversed;
      
 	}
 	
   // Display current fan settings
 	public void showCurrentFanSetting() {
-		System.out.println("Fan is at Speed "+this.currentRotation+", reversed is: "+this.reversed);
+		System.out.println("Fan is at Speed "+this.currentRotation+", reversed is: "+this.isReversed);
 	}
 }
