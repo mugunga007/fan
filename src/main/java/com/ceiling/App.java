@@ -19,23 +19,27 @@ public class App
 
         // speed rotator cord pulled
 		fan.pullIncrease();
+        fan.showCurrentFanSetting();
 
         // speed rotator cord pulled x2
 		fan.pullIncrease();
+        fan.showCurrentFanSetting();
 
         // reverse cord pulled
 		fan.pullReverse();
+        fan.showCurrentFanSetting();
 
         // speed rotator cord pulled x3
 		fan.pullIncrease();
+        fan.showCurrentFanSetting();
 
         // speed rotator cord pulled x4
 		fan.pullIncrease();
+        fan.showCurrentFanSetting();
 
         // speed rotator cord pulled x5
 		fan.pullIncrease();
-
-        // show current fan settings
-		fan.showCurrentFanSetting();
+        fan.showCurrentFanSetting();
+       
     }
 }
